@@ -1,0 +1,64 @@
+body{
+  background-color: antiquewhite;
+}
+
+header{
+    height: 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+  margin-right: 10px;
+}
+
+.title{
+
+}
+.HeaderMenu{
+    position: absolute;
+    right: 0;
+
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form{
+
+}
+input[type="text"] {
+  color: rgb(102, 173, 255) ;
+  font-size: 16px;
+  padding: 5px
+  width: 70%;
+}
+
+
+.lists{
+  width: 50%;
+  max-width: 600px;
+}
+main>div>ul>li{
+  list-style: none;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  margin: 10px;
+  padding-right: 50px;
+  text-indent: 5px;
+  font-size: 20px;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+main>div>ul>li>button{
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 30px;
+}
