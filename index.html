@@ -8,8 +8,10 @@
 </head>
 <body>
   <header>
-    <div class="title">やることリスト</div>
-    <nav class="HeaderMenu">買い物</nav>
+    <h1 class="title">買い物リスト</h1>
+    <nav class="HeaderMenu">
+      <button></button>
+    </nav>
   </header>
   <main>
     <form>
@@ -17,11 +19,21 @@
       <input type="button" value="追加" id="newTodoPlus">
     </form>
     <div class="lists">
-      <ul>
-
+      <ul id="mainlist">
+      </ul>
+    </div>
+    <div class="lists change dustBox">
+      <ul id="dustbox">
       </ul>
     </div>
   </main>
+  <footer>
+    <div>
+      Icons made by
+      <a href="http://www.freepik.com/" title="Freepik"> Freepik </a>
+      from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
+  </footer>
   <script src="js/main.js"> </script>
 </body>
 </html>

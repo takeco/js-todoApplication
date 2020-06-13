@@ -1,5 +1,10 @@
 body{
+  min-height: 93vh;
   background-color: antiquewhite;
+  position: relative;
+}
+.change{
+  display:none;
 }
 
 header{
@@ -8,13 +13,15 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px 0;
 }
 nav{
   margin-right: 10px;
 }
-
 .title{
-
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.7);
 }
 .HeaderMenu{
     position: absolute;
@@ -28,20 +35,19 @@ main{
   justify-content: center;
   align-items: center;
 }
-form{
-
-}
 input[type="text"] {
   color: rgb(102, 173, 255) ;
   font-size: 16px;
-  padding: 5px
+  padding: 5px;
   width: 70%;
+  max-width: 300px;
 }
-
-
 .lists{
-  width: 50%;
   max-width: 600px;
+  width: 50%;
+}
+main>div>ul{
+  padding: 0;
 }
 main>div>ul>li{
   list-style: none;
@@ -55,10 +61,39 @@ main>div>ul>li{
   line-height: 30px;
   word-wrap: break-word;
 }
-main>div>ul>li>button{
-  text-align: right;
+.dustBox{
+  margin-top: 32px;
+}
+.dustbinColor{
+  filter: invert(72%) sepia(26%) saturate(6428%) hue-rotate(1deg) brightness(70%) contrast(102%);
+}
+.dustbin{
   position: absolute;
   right: 0;
-  top: 0;
-  height: 30px;
+}
+.undo{
+  position: absolute;
+  right: 30px;
+}
+li>img{
+    top: 5px;
+  height: 20px;
+  cursor: pointer;
+  font-size: 8px;
+}
+
+footer{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: inline;
+}
+footer div{
+  padding-right: 30px;
+  text-align: right;
+}
+footer div,a{
+  font-size: 8px;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
 }
